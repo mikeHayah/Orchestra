@@ -90,6 +90,10 @@ The script checks job status every `sleep_interval` seconds (default: 20 minutes
 - **Permission denied**: Make sure `orchestra.sh` is executable (`chmod +x orchestra.sh`)
 - **Job failures**: Check SLURM output logs in your experiment directory for details
 
+## Nextflow Experiments
+
+This repository also includes Nextflow workflow experiments for alternative orchestration approaches.  See the [NextFlow-Exp folder](NextFlow-Exp/) for details. 
+
 ## License
 
 MIT
