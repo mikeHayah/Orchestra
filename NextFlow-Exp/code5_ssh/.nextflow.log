@@ -1,0 +1,84 @@
+Jul-22 04:28:29.139 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Jul-22 04:28:29.198 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Jul-22 04:28:29.215 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/miha493e/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Jul-22 04:28:29.247 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-22 04:28:29.248 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-22 04:28:29.250 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jul-22 04:28:29.263 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-22 04:28:29.284 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /data/horse/ws/miha493e-research_project/activediffusion/experiments/exp7.1/code5_ssh/nextflow.config
+Jul-22 04:28:29.286 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /data/horse/ws/miha493e-research_project/activediffusion/experiments/exp7.1/code5_ssh/nextflow.config
+Jul-22 04:28:29.311 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/miha493e/.nextflow/secrets/store.json
+Jul-22 04:28:29.314 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@21ab988f] - activable => nextflow.secret.LocalSecretsProvider@21ab988f
+Jul-22 04:28:29.319 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jul-22 04:28:29.632 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Jul-22 04:28:29.643 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [extravagant_nobel] DSL2 - revision: feeadfedae
+Jul-22 04:28:29.644 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-22 04:28:29.644 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-22 04:28:29.679 [main] DEBUG nextflow.Session - Session UUID: 837b0fa3-5306-441b-9fc0-3fe67ec95922
+Jul-22 04:28:29.679 [main] DEBUG nextflow.Session - Run name: extravagant_nobel
+Jul-22 04:28:29.679 [main] DEBUG nextflow.Session - Executor pool size: 8
+Jul-22 04:28:29.685 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-22 04:28:29.689 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-22 04:28:29.723 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.6 build 5954
+  Created: 01-07-2025 11:27 UTC (13:27 CEST)
+  System: Linux 4.18.0-513.24.1.el8_9.x86_64
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.6+9-b895.97
+  Encoding: UTF-8 (UTF-8)
+  Process: 3173695@login2.barnard.hpc.tu-dresden.de [172.24.95.29]
+  CPUs: 8 - Mem: 32 GB (19.2 GB) - Swap: 3.7 GB (2.1 GB)
+Jul-22 04:28:29.772 [main] DEBUG nextflow.Session - Work-dir: /data/horse/ws/miha493e-research_project/activediffusion/experiments/exp7.1/code5_ssh/work [lustre]
+Jul-22 04:28:29.773 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /data/horse/ws/miha493e-research_project/activediffusion/experiments/exp7.1/code5_ssh/bin
+Jul-22 04:28:29.780 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-22 04:28:29.787 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-22 04:28:29.790 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jul-22 04:28:29.808 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-22 04:28:29.816 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Jul-22 04:28:29.876 [main] DEBUG nextflow.Session - Session start
+Jul-22 04:28:29.992 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-22 04:28:30.074 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Jul-22 04:28:30.074 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Jul-22 04:28:30.080 [main] DEBUG nextflow.executor.Executor - [warm up] executor > slurm
+Jul-22 04:28:30.088 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'slurm' > capacity: 100; pollInterval: 5s; dumpInterval: 5m 
+Jul-22 04:28:30.090 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: slurm)
+Jul-22 04:28:30.092 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'slurm' > queue-stat-interval: 1m
+Jul-22 04:28:30.108 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'submitSlurmJob': maxForks=0; fair=false; array=0
+Jul-22 04:28:30.138 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: submitSlurmJob
+Jul-22 04:28:30.139 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Jul-22 04:28:30.143 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > submitSlurmJob
+Jul-22 04:28:30.145 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_47c43c343ae79b09: /data/horse/ws/miha493e-research_project/activediffusion/experiments/exp7.1/code5_ssh/main.nf
+Jul-22 04:28:30.145 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jul-22 04:28:30.145 [main] DEBUG nextflow.Session - Session await
+Jul-22 04:28:30.314 [Task submitter] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=submitSlurmJob (1); work-dir=/data/horse/ws/miha493e-research_project/activediffusion/experiments/exp7.1/code5_ssh/work/61/ea732d9b0fa6e72af8af87b43ee5ee
+  error [nextflow.exception.ProcessFailedException]: Error submitting process 'submitSlurmJob (1)' for execution
+Jul-22 04:28:30.325 [Task submitter] DEBUG nextflow.processor.TaskRun - Unable to dump error of process 'null' -- Cause: java.nio.file.NoSuchFileException: /data/horse/ws/miha493e-research_project/activediffusion/experiments/exp7.1/code5_ssh/work/61/ea732d9b0fa6e72af8af87b43ee5ee/.command.log
+Jul-22 04:28:30.327 [Task submitter] ERROR nextflow.processor.TaskProcessor - Error executing process > 'submitSlurmJob (1)'
+
+Caused by:
+  Failed to submit process to grid scheduler for execution
+
+
+Command executed:
+
+  sbatch .command.run
+
+Command exit status:
+  1
+
+Command output:
+  sbatch: error: invalid partition specified: default
+  sbatch: error: Batch job submission failed: Invalid partition name specified
+
+Work dir:
+  /data/horse/ws/miha493e-research_project/activediffusion/experiments/exp7.1/code5_ssh/work/61/ea732d9b0fa6e72af8af87b43ee5ee
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+Jul-22 04:28:30.329 [Task submitter] DEBUG nextflow.Session - Session aborted -- Cause: Error submitting process 'submitSlurmJob (1)' for execution
+Jul-22 04:28:30.354 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jul-22 04:28:30.354 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: slurm) - terminating tasks monitor poll loop
+Jul-22 04:28:30.354 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jul-22 04:28:30.358 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=1; submittedCount=0; runningCount=-1; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=-1; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Jul-22 04:28:30.536 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jul-22 04:28:30.549 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

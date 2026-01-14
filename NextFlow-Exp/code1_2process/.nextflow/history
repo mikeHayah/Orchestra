@@ -1,0 +1,4 @@
+2025-07-23 18:59:17	1m 11s	soggy_payne	OK	d2ae7bb06c6667f8fb95b05b536c041c	20345027-4785-4c68-9f5e-db4aace8a14e	nextflow run main.nf
+2025-07-23 19:04:02	1.6s	adoring_brattain	ERR	d2ae7bb06c6667f8fb95b05b536c041c	22232cf4-4b15-4b86-80f0-c8126d4aeb91	nextflow run main.nf
+2025-07-23 19:04:20	1.7s	insane_moriondo	ERR	d2ae7bb06c6667f8fb95b05b536c041c	7fcc89d7-be5a-4ba3-a776-6c85489ddb0d	nextflow run main.nf
+2025-07-23 19:27:53	51s	elegant_fermat	OK	d2ae7bb06c6667f8fb95b05b536c041c	be5e7932-2b95-4908-adc5-5381d7a1f296	nextflow run main.nf

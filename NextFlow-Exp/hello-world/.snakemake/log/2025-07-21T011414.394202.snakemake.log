@@ -1,0 +1,16 @@
+None
+host: login2.barnard.hpc.tu-dresden.de
+Building DAG of jobs...
+SLURM run ID: 474d8650-73e2-4352-b27b-5013bdbc9593
+Using shell: /usr/bin/bash
+Provided remote nodes: 10
+Job stats:
+job         count
+--------  -------
+cpu_task        1
+total           1
+
+Select jobs to execute...
+Cleaning up log files older than 10 day(s).
+WorkflowError:
+Cannot parse runtime value into minutes for setting runtime resource: 00:10:00

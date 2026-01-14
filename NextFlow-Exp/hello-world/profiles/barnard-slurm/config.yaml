@@ -1,0 +1,9 @@
+executor: slurm
+jobs: 10
+
+default-resources:
+  - mem_mb=100
+  - runtime=10
+  - cpus=1
+
+jobscript: slurm-jobscript.sh

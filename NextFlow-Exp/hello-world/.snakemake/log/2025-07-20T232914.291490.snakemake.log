@@ -1,0 +1,25 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: login2.barnard.hpc.tu-dresden.de
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job         count
+--------  -------
+cpu_task        1
+total           1
+
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Jul 20 23:29:14 2025]
+localrule cpu_task:
+    output: output_cpu.txt
+    jobid: 0
+    reason: Missing output files: output_cpu.txt
+    resources: tmpdir=/tmp
+[Sun Jul 20 23:29:14 2025]
+Finished jobid: 0 (Rule: cpu_task)
+1 of 1 steps (100%) done
+Complete log(s): /data/horse/ws/miha493e-research_project/activediffusion/experiments/exp9/.snakemake/log/2025-07-20T232914.291490.snakemake.log

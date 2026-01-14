@@ -1,0 +1,3 @@
+From first script: First script Nextflow + Python on SLURM!
+
+Second script Nextflow + Python on SLURM!

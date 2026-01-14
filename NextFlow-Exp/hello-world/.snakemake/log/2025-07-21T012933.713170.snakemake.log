@@ -1,0 +1,29 @@
+None
+host: login2.barnard.hpc.tu-dresden.de
+Building DAG of jobs...
+SLURM run ID: 275dab7f-63f0-4b52-8cd7-92d5dd71097c
+Using shell: /usr/bin/bash
+Provided remote nodes: 20
+Job stats:
+job       count
+------  -------
+my_job        1
+total         1
+
+Select jobs to execute...
+Execute 1 jobs...
+[Mon Jul 21 01:29:33 2025]
+rule my_job:
+    output: results/my_output.txt
+    jobid: 0
+    reason: Missing output files: results/my_output.txt
+    resources: mem_mb=2000, mem_mib=1908, disk_mb=50000, disk_mib=47684, tmpdir=<TBD>, cpus=2, runtime=15
+Shell command: echo 'Hello from Barnard!' > results/my_output.txt
+No SLURM account given, trying to guess.
+Unable to guess SLURM account. Trying to proceed without.
+Job 0 has been submitted with SLURM jobid 18560912 (log: /data/horse/ws/miha493e-research_project/activediffusion/experiments/exp9/.snakemake/slurm_logs/rule_my_job/18560912.log).
+[Mon Jul 21 01:30:13 2025]
+Finished jobid: 0 (Rule: my_job)
+1 of 1 steps (100%) done
+Cleaning up log files older than 10 day(s).
+Complete log(s): /data/horse/ws/miha493e-research_project/activediffusion/experiments/exp9/.snakemake/log/2025-07-21T012933.713170.snakemake.log

@@ -1,0 +1,13 @@
+rule all:
+    input:
+        "results/my_output.txt"
+
+rule my_job:
+    output:
+        "results/my_output.txt"
+    resources:
+        mem_mb=2000,
+        runtime=15,
+        cpus=2
+    shell:
+        "echo 'Hello from Barnard!' > {output}"

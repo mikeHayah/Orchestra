@@ -1,0 +1,18 @@
+name: env-snake
+channels:
+  - defaults
+  - conda-forge 
+  - bioconda
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+    - snakemake
+    - snakemake-executor-plugin-cluster-generic
+    - snakemake-executor-plugin-slurm
+    - graphviz
+    - matplotlib
+    - numpy
+  
+
+  

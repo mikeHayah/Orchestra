@@ -1,0 +1,73 @@
+Jul-23 18:59:16.550 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Jul-23 18:59:16.609 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Jul-23 18:59:16.626 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/miha493e/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Jul-23 18:59:16.659 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-23 18:59:16.660 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-23 18:59:16.662 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jul-23 18:59:16.674 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-23 18:59:16.691 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /data/horse/ws/miha493e-research_project/activediffusion/experiments/exp7.1/code1_2process/nextflow.config
+Jul-23 18:59:16.693 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /data/horse/ws/miha493e-research_project/activediffusion/experiments/exp7.1/code1_2process/nextflow.config
+Jul-23 18:59:16.717 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/miha493e/.nextflow/secrets/store.json
+Jul-23 18:59:16.720 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@21ab988f] - activable => nextflow.secret.LocalSecretsProvider@21ab988f
+Jul-23 18:59:16.725 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jul-23 18:59:17.046 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Jul-23 18:59:17.057 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [soggy_payne] DSL2 - revision: d2ae7bb06c
+Jul-23 18:59:17.058 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-23 18:59:17.058 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-23 18:59:17.093 [main] DEBUG nextflow.Session - Session UUID: 20345027-4785-4c68-9f5e-db4aace8a14e
+Jul-23 18:59:17.094 [main] DEBUG nextflow.Session - Run name: soggy_payne
+Jul-23 18:59:17.094 [main] DEBUG nextflow.Session - Executor pool size: 8
+Jul-23 18:59:17.100 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-23 18:59:17.104 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-23 18:59:17.138 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.6 build 5954
+  Created: 01-07-2025 11:27 UTC (13:27 CEST)
+  System: Linux 4.18.0-513.24.1.el8_9.x86_64
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.6+9-b895.97
+  Encoding: UTF-8 (UTF-8)
+  Process: 2210439@login2.barnard.hpc.tu-dresden.de [172.24.95.29]
+  CPUs: 8 - Mem: 32 GB (30.2 GB) - Swap: 3.7 GB (2.1 GB)
+Jul-23 18:59:17.169 [main] DEBUG nextflow.Session - Work-dir: /data/horse/ws/miha493e-research_project/activediffusion/experiments/exp7.1/code1_2process/work [lustre]
+Jul-23 18:59:17.170 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /data/horse/ws/miha493e-research_project/activediffusion/experiments/exp7.1/code1_2process/bin
+Jul-23 18:59:17.177 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-23 18:59:17.184 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-23 18:59:17.187 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jul-23 18:59:17.205 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-23 18:59:17.213 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Jul-23 18:59:17.271 [main] DEBUG nextflow.Session - Session start
+Jul-23 18:59:17.433 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-23 18:59:17.503 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Jul-23 18:59:17.503 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Jul-23 18:59:17.510 [main] DEBUG nextflow.executor.Executor - [warm up] executor > slurm
+Jul-23 18:59:17.517 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'slurm' > capacity: 100; pollInterval: 5s; dumpInterval: 5m 
+Jul-23 18:59:17.518 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: slurm)
+Jul-23 18:59:17.520 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'slurm' > queue-stat-interval: 1m
+Jul-23 18:59:17.546 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'runFirstScript': maxForks=0; fair=false; array=0
+Jul-23 18:59:17.596 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Jul-23 18:59:17.596 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Jul-23 18:59:17.596 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'runSecondScript': maxForks=0; fair=false; array=0
+Jul-23 18:59:17.598 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: runFirstScript, runSecondScript
+Jul-23 18:59:17.600 [main] DEBUG nextflow.Session - Igniting dataflow network (4)
+Jul-23 18:59:17.604 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > runFirstScript
+Jul-23 18:59:17.605 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > runSecondScript
+Jul-23 18:59:17.605 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_bd0a6cd554b9764c: /data/horse/ws/miha493e-research_project/activediffusion/experiments/exp7.1/code1_2process/main.nf
+Jul-23 18:59:17.605 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jul-23 18:59:17.605 [main] DEBUG nextflow.Session - Session await
+Jul-23 18:59:17.779 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process runFirstScript (1) > jobId: 18598601; workDir: /data/horse/ws/miha493e-research_project/activediffusion/experiments/exp7.1/code1_2process/work/7f/70aae26f510615b219ca41f11de81b
+Jul-23 18:59:17.780 [Task submitter] INFO  nextflow.Session - [7f/70aae2] Submitted process > runFirstScript (1)
+Jul-23 18:59:52.530 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 18598601; id: 1; name: runFirstScript (1); status: COMPLETED; exit: 0; error: -; workDir: /data/horse/ws/miha493e-research_project/activediffusion/experiments/exp7.1/code1_2process/work/7f/70aae26f510615b219ca41f11de81b started: 1753289987528; exited: 2025-07-23T16:59:47Z; ]
+Jul-23 18:59:52.531 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-23 18:59:52.610 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process runSecondScript (1) > jobId: 18598602; workDir: /data/horse/ws/miha493e-research_project/activediffusion/experiments/exp7.1/code1_2process/work/8c/cb30566680d99665db165c3db1bc01
+Jul-23 18:59:52.610 [Task submitter] INFO  nextflow.Session - [8c/cb3056] Submitted process > runSecondScript (1)
+Jul-23 19:00:22.532 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 18598602; id: 2; name: runSecondScript (1); status: COMPLETED; exit: 0; error: -; workDir: /data/horse/ws/miha493e-research_project/activediffusion/experiments/exp7.1/code1_2process/work/8c/cb30566680d99665db165c3db1bc01 started: 1753290022527; exited: 2025-07-23T17:00:19Z; ]
+Jul-23 19:00:22.546 [TaskFinalizer-2] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-23 19:00:22.548 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jul-23 19:00:27.526 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: slurm) - terminating tasks monitor poll loop
+Jul-23 19:00:27.527 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jul-23 19:00:27.529 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Jul-23 19:00:27.530 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Jul-23 19:00:27.534 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=5s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Jul-23 19:00:27.570 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jul-23 19:00:27.585 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jul-23 19:00:27.585 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

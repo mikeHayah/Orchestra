@@ -1,0 +1,17 @@
+name: env-nextflow
+channels:
+  - defaults
+  - conda-forge 
+  - bioconda
+dependencies:
+  - python=3.12
+  - nextflow
+  - pip
+  - pip:
+    - pandas
+    - scikit-learn
+    - matplotlib
+    - numpy
+  
+
+  

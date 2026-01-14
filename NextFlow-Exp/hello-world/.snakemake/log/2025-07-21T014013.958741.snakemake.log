@@ -1,0 +1,29 @@
+None
+host: login2.barnard.hpc.tu-dresden.de
+Building DAG of jobs...
+SLURM run ID: dfd2536e-9148-4fed-b088-3530e715878b
+Using shell: /usr/bin/bash
+Provided remote nodes: 10
+Job stats:
+job       count
+------  -------
+my_job        1
+total         1
+
+Select jobs to execute...
+Execute 1 jobs...
+[Mon Jul 21 01:40:13 2025]
+rule my_job:
+    output: results/my_output.txt
+    jobid: 0
+    reason: Code has changed since last execution
+    resources: mem_mb=2000, mem_mib=1908, disk_mb=50000, disk_mib=47684, tmpdir=<TBD>, runtime=15, cpus=2
+Shell command: echo 'Hello from Barnard!' > results/my_output.txt
+No SLURM account given, trying to guess.
+Unable to guess SLURM account. Trying to proceed without.
+Job 0 has been submitted with SLURM jobid 18560914 (log: /data/horse/ws/miha493e-research_project/activediffusion/experiments/exp9/.snakemake/slurm_logs/rule_my_job/18560914.log).
+Terminating processes on user request, this might take some time.
+Cleaning up log files older than 10 day(s).
+Complete log(s): /data/horse/ws/miha493e-research_project/activediffusion/experiments/exp9/.snakemake/log/2025-07-21T014013.958741.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.
