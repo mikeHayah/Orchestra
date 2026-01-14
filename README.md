@@ -1,6 +1,6 @@
 # Orchestra 🎼
 
-A bash script for orchestrating alternating job submissions across multiple HPC clusters at TU Dresden.
+A bash script for orchestrating alternating job submissions across multiple HPC clusters at TU Dresden. Plus Nextflow workflow experiments for alternative orchestration approaches.
 
 ## Overview
 
@@ -92,7 +92,7 @@ The script checks job status every `sleep_interval` seconds (default: 20 minutes
 
 ## Nextflow Experiments
 
-This repository also includes Nextflow workflow experiments for alternative orchestration approaches.  See the [NextFlow-Exp folder](NextFlow-Exp/) for details. 
+See the [NextFlow-Exp folder](NextFlow-Exp/) for details. 
 
 ## License
 
